@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<center>
+
+<h1>Use h1 for the title</h1>
+
+<p>Use p for paragraph.</p>
+
+<p>Here's another paragraph.</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p>
+<img id = "fortuneCookie" src="cookieDefault.gif" alt="Fortune cookie" width="650" height="480">
+</p>
+
+</center>
+
+<script>
+function myFunction() 
+{
+	<!-- Add as many lines (picture files) as you want: -->
+	var cookiePictures = [
+        "cookie01.jpg", 
+        "cookie02.jpg"
+    ];
+    
+    var picSource = cookiePictures[Math.floor(Math.random() * cookiePictures.length)];
+    document.getElementById("fortuneCookie").src = picSource;
+}
+</script>
+
+</body>
+</html>
